@@ -8,4 +8,6 @@ class Rol(Base):
     id = Column(Integer, primary_key=True, index=True)
     nombreRol = Column(String(20))
     estado = Column(Boolean, default=True)
+    fecha_registro = Column(DateTime)
+    fecha_actualizacion = Column(DateTime)
     
